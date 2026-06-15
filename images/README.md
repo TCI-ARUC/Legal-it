@@ -9,3 +9,9 @@ Plaats hier de beeldbestanden die op de site gebruikt worden.
 - **Aanbevolen formaat:** minimaal 800 × 1000 px (liefst 1200 × 1500 px voor scherpe weergave op retina-schermen).
 
 Zolang dit bestand ontbreekt, valt de hero terug op de bestaande placeholder.
+
+## Logo
+- **Header:** `logo-legal-it-header.webp` (+ `.png` fallback) — bijgesneden versie (merk + LEGAL IT, zonder tagline).
+- **Footer:** `logo-legal-it.webp` (+ `.png` fallback) — volledige versie met tagline.
+- **Bron:** `Logo Legal IT.png` (origineel, wordt niet geserveerd).
+- Gebruikt in header en footer van alle pagina's via een `<picture>`-element.
