@@ -169,14 +169,29 @@
     stepForm.querySelectorAll("[data-prev]").forEach(function (b) {
       b.addEventListener("click", function () { show(Math.max(current - 1, 0)); });
     });
-    // choice chips
+    // choice chips (enkel- of meervoudige keuze via data-multi)
     stepForm.querySelectorAll("[data-choice]").forEach(function (group) {
+      var multi = group.hasAttribute("data-multi");
+      var hidden = group.querySelector("input[type=hidden]");
+      function syncMulti() {
+        var vals = [];
+        group.querySelectorAll(".chip.sel").forEach(function (c) { vals.push(c.textContent.trim()); });
+        if (hidden) hidden.value = vals.join(", ");
+      }
       group.querySelectorAll(".chip").forEach(function (chip) {
+        chip.setAttribute("aria-pressed", chip.classList.contains("sel") ? "true" : "false");
         chip.addEventListener("click", function () {
-          group.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("sel"); });
-          chip.classList.add("sel");
-          var hidden = group.querySelector("input[type=hidden]");
-          if (hidden) hidden.value = chip.textContent.trim();
+          if (multi) {
+            chip.classList.toggle("sel");
+            chip.setAttribute("aria-pressed", chip.classList.contains("sel") ? "true" : "false");
+            syncMulti();
+          } else {
+            group.querySelectorAll(".chip").forEach(function (c) {
+              c.classList.remove("sel"); c.setAttribute("aria-pressed", "false");
+            });
+            chip.classList.add("sel"); chip.setAttribute("aria-pressed", "true");
+            if (hidden) hidden.value = chip.textContent.trim();
+          }
         });
       });
     });
