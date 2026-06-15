@@ -113,6 +113,8 @@ h1,h2,h3,h4 { font-family: var(--serif); font-weight: 500; margin: 0; line-heigh
 
 /* ---------- Logo ---------- */
 .logo { display: inline-flex; align-items: center; gap: 13px; }
+.logo-img { display: block; height: 58px; width: auto; }
+.site-footer .logo-img { height: 92px; }
 .logo-mark {
   position: relative;
   width: 38px; height: 38px;
