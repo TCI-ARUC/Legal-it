@@ -13,5 +13,5 @@ Zolang dit bestand ontbreekt, valt de hero terug op de bestaande placeholder.
 ## Logo
 - **Header:** `logo-legal-it-header.webp` (+ `.png` fallback) — bijgesneden versie (merk + LEGAL IT, zonder tagline).
 - **Footer:** `logo-legal-it.webp` (+ `.png` fallback) — volledige versie met tagline.
-- **Bron:** `Logo Legal IT.png` (origineel, wordt niet geserveerd).
+- **Bron:** `Logo Legal IT.png` (origineel) en `Logo-recolored-source.png` (achtergrond gelijkgetrokken aan site-navy #0B1F3A). Beide worden niet geserveerd.
 - Gebruikt in header en footer van alle pagina's via een `<picture>`-element.

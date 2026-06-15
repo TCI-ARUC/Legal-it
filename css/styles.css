@@ -460,3 +460,58 @@ body.nav-open .mobile-menu { opacity: 1; visibility: visible; transform: none; }
   .step-dot .lbl { display: none; }
   .step-progress { margin-bottom: 36px; }
 }
+
+/* =========================================================
+   Interactiviteit / "leven"
+   ========================================================= */
+
+/* ---- Gouden flits over hero-accent ---- */
+.hero-shine {
+  background-image: linear-gradient(100deg,
+    var(--gold) 0%, var(--gold) 38%,
+    #FBEFC8 48%, #FFFFFF 51%, #FBEFC8 54%,
+    var(--gold) 64%, var(--gold) 100%);
+  background-size: 250% 100%;
+  background-position: 130% 0;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-shine.lit { animation: heroShine 1.7s var(--ease) .35s 1 both; }
+@keyframes heroShine {
+  0%   { background-position: 130% 0; }
+  100% { background-position: -30% 0; }
+}
+
+/* ---- Diepte: hover-lift op kaarten ---- */
+.approach-col, .trust-item, .stat {
+  transition: transform .5s var(--ease);
+  will-change: transform;
+}
+.approach-col:hover, .stat:hover { transform: translateY(-7px); }
+.trust-item:hover { transform: translateY(-4px); }
+
+/* ---- Diepte: hero parallax-lagen ---- */
+.hero-parallax-img { transition: transform .6s var(--ease); will-change: transform; }
+.hero-parallax-card { transition: transform .6s var(--ease); will-change: transform; }
+
+/* ---- Muiscursor: gouden vulpen ---- */
+#pen-cursor {
+  position: fixed; left: 0; top: 0; width: 42px; height: 42px;
+  pointer-events: none; z-index: 99999;
+  transform: translate3d(-200px, -200px, 0);
+  filter: drop-shadow(0 2px 3px rgba(5, 14, 28, .5));
+  opacity: 0; transition: opacity .2s ease;
+}
+#pen-cursor.ready { opacity: 1; }
+#pen-cursor.over-text { opacity: 0; }
+#pen-cursor svg { display: block; width: 100%; height: 100%; transform-origin: 5px 5px; transition: transform .16s var(--ease); }
+#pen-cursor.writing svg { transform: rotate(-9deg) scale(1.14); }
+#pen-cursor.press svg { transform: rotate(5deg) scale(.9); }
+html.has-pen, html.has-pen * { cursor: none !important; }
+html.has-pen input, html.has-pen textarea, html.has-pen select, html.has-pen [contenteditable] { cursor: text !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-shine.lit { animation: none; }
+  .hero-parallax-img, .hero-parallax-card { transition: none; }
+  .approach-col, .trust-item, .stat { transition: none; }
+}
