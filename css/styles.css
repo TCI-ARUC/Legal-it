@@ -591,3 +591,27 @@ html.has-pen input, html.has-pen textarea, html.has-pen select, html.has-pen [co
 .nav-tel:hover { color: var(--gold-soft); }
 .mobile-tel { color: var(--gold) !important; font-weight: 600; }
 @media (max-width: 980px) { .nav-tel { display: none; } }
+
+/* =========================================================
+   Sticky mobiele CTA-balk
+   ========================================================= */
+.mobile-cta { display: none; }
+@media (max-width: 768px) {
+  .mobile-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 8000;
+    display: flex;
+    background: rgba(11,31,58,.97);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -6px 24px rgba(5,14,28,.35);
+  }
+  .mcta-btn {
+    flex: 1; display: flex; align-items: center; justify-content: center; gap: 9px;
+    padding: 15px 8px; font-family: var(--sans); font-weight: 600;
+    font-size: .82rem; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .mcta-tel { color: var(--white-on-navy); border-right: 1px solid var(--line); }
+  .mcta-plan { background: var(--gold-grad); color: var(--navy-0); }
+  body { padding-bottom: 56px; }
+}
+body.cookie-open .mobile-cta { display: none !important; }

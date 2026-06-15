@@ -332,16 +332,18 @@
     banner.innerHTML =
       '<p><strong>Cookies op deze website.</strong> We gebruiken analytische cookies om de website te ' +
       'verbeteren. U bepaalt zelf of we deze mogen plaatsen. Zie ons ' +
-      '<a href="privacy.html" data-cookie-privacy>privacybeleid</a>.</p>' +
+      '<a href="/privacy" data-cookie-privacy>privacybeleid</a>.</p>' +
       '<div class="cookie-actions">' +
         '<button type="button" class="btn-cookie-ghost" data-cookie="denied">Weigeren</button>' +
         '<button type="button" class="btn btn-gold" data-cookie="granted">Accepteren</button>' +
       '</div>';
     document.body.appendChild(banner);
+    document.body.classList.add("cookie-open");
     requestAnimationFrame(function () { banner.classList.add("in"); });
 
     function close() {
       banner.classList.remove("in");
+      document.body.classList.remove("cookie-open");
       setTimeout(function () { if (banner.parentNode) banner.parentNode.removeChild(banner); }, 450);
     }
     banner.querySelectorAll("[data-cookie]").forEach(function (btn) {
@@ -362,5 +364,18 @@
       window.gtag("event", "plan_gesprek_klik", { event_category: "lead" });
     }
   }, true);
+
+  /* ---- Sticky mobiele CTA-balk (bellen / gesprek plannen) ---- */
+  (function () {
+    if (document.querySelector(".mobile-cta")) return;
+    var bar = document.createElement("div");
+    bar.className = "mobile-cta";
+    bar.innerHTML =
+      '<a class="mcta-btn mcta-tel" href="tel:+31732200700">' +
+        '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>' +
+        'Bellen</a>' +
+      '<a class="mcta-btn mcta-plan" href="/plan-een-gesprek">Plan een gesprek</a>';
+    document.body.appendChild(bar);
+  })();
 })();
 
