@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan een gesprek — Legal IT</title>
+<meta name="description" content="Plan een vrijblijvend gesprek met een specialist van Legal IT. In drie stappen geregeld.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" data-screen-label="Header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Legal IT home">
+      <span class="logo-mark"><span class="lm-1">L</span><span class="lm-2">L</span></span>
+      <span class="logo-word">LEGAL IT</span>
+    </a>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <ul class="nav-links">
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="oplossingen.html">Oplossingen</a></li>
+        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-gold nav-cta" href="plan-een-gesprek.html">Plan een gesprek</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu openen"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="diensten.html">Diensten</a>
+  <a href="oplossingen.html">Oplossingen</a>
+  <a href="over-ons.html">Over ons</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-gold" href="plan-een-gesprek.html">Plan een gesprek</a>
+</div>
+
+<main>
+<section class="navy" data-screen-label="Plan een gesprek" style="padding-top:140px; padding-bottom:clamp(56px,7vw,96px); min-height:100vh;">
+  <div class="wrap" style="display:grid; grid-template-columns:.82fr 1.18fr; gap:clamp(36px,5vw,72px); align-items:start;">
+
+    <!-- left rail -->
+    <aside class="reveal" style="position:sticky; top:120px;">
+      <p class="eyebrow">Plan een gesprek</p>
+      <h1 class="display" style="font-size:clamp(2.2rem,4vw,3.4rem); margin-top:22px;">Een goed gesprek is <span class="serif-italic gold-text">zo gepland.</span></h1>
+      <p class="lead" style="margin-top:22px;">Vrijblijvend en zonder verplichtingen. We luisteren naar uw situatie en denken meteen met u mee.</p>
+      <ul style="list-style:none; padding:0; margin:38px 0 0; display:flex; flex-direction:column; gap:18px;">
+        <li style="display:flex; gap:14px; align-items:center; color:var(--white-on-navy);"><span style="color:var(--gold);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg></span> Binnen één werkdag een reactie</li>
+        <li style="display:flex; gap:14px; align-items:center; color:var(--white-on-navy);"><span style="color:var(--gold);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg></span> Een vaste specialist als aanspreekpunt</li>
+        <li style="display:flex; gap:14px; align-items:center; color:var(--white-on-navy);"><span style="color:var(--gold);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg></span> Telefonisch of bij u op kantoor</li>
+      </ul>
+      <div style="margin-top:40px; padding-top:28px; border-top:1px solid rgba(203,160,84,.18);">
+        <p style="font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin:0 0 8px;">Liever direct bellen?</p>
+        <a href="tel:+31732200700" style="font-family:var(--serif); font-size:1.5rem; color:var(--cream);">073 – 22 00 700</a>
+      </div>
+    </aside>
+
+    <!-- right: card -->
+    <div class="reveal" data-delay="1" style="background:#fff; color:var(--ink); padding:clamp(28px,4vw,52px); box-shadow:var(--shadow-md);">
+      <!-- progress -->
+      <div class="step-progress" data-step-progress>
+        <div class="step-track"><div class="fill" data-step-bar></div></div>
+        <div class="step-dot active" data-step-dot><div class="dot">1</div><div class="lbl">Gegevens</div></div>
+        <div class="step-dot" data-step-dot><div class="dot">2</div><div class="lbl">Situatie</div></div>
+        <div class="step-dot" data-step-dot><div class="dot">3</div><div class="lbl">Voorkeur</div></div>
+      </div>
+
+      <form data-steps novalidate>
+        <!-- STEP 1 -->
+        <div class="step">
+          <h2 style="font-size:1.5rem; margin-bottom:6px;">Met wie hebben we het genoegen?</h2>
+          <p style="color:var(--ink-soft); margin:0 0 26px; font-size:.95rem;">Zodat we u persoonlijk te woord kunnen staan.</p>
+          <div class="field-row">
+            <div class="field">
+              <label for="pf-name">Naam</label>
+              <input id="pf-name" type="text" required data-name-field placeholder="Voor- en achternaam">
+              <span class="err">Vul uw naam in.</span>
+            </div>
+            <div class="field">
+              <label for="pf-office">Kantoor</label>
+              <input id="pf-office" type="text" required placeholder="Naam notariskantoor">
+              <span class="err">Vul de kantoornaam in.</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="pf-email">E-mail</label>
+              <input id="pf-email" type="email" required placeholder="naam@kantoor.nl">
+              <span class="err">Vul een geldig e-mailadres in.</span>
+            </div>
+            <div class="field">
+              <label for="pf-phone">Telefoon</label>
+              <input id="pf-phone" type="tel" required placeholder="06 – 12 34 56 78">
+              <span class="err">Vul een geldig telefoonnummer in.</span>
+            </div>
+          </div>
+          <div class="step-actions">
+            <span></span>
+            <button class="btn btn-gold" type="button" data-next>Volgende <span class="arr">→</span></button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step" hidden>
+          <h2 style="font-size:1.5rem; margin-bottom:6px;">Vertel iets over uw kantoor.</h2>
+          <p style="color:var(--ink-soft); margin:0 0 26px; font-size:.95rem;">Zo kunnen we het gesprek goed voorbereiden.</p>
+          <div class="field" data-choice>
+            <label>Aantal medewerkers</label>
+            <div class="chip-row">
+              <button type="button" class="chip">1 – 5</button>
+              <button type="button" class="chip sel">5 – 15</button>
+              <button type="button" class="chip">15 – 30</button>
+              <button type="button" class="chip">30+</button>
+            </div>
+            <input type="hidden" value="5 – 15">
+          </div>
+          <div class="field" data-choice style="margin-top:30px;">
+            <label>Waar gaat het vooral om?</label>
+            <div class="chip-row">
+              <button type="button" class="chip sel">Volledige IT-partner</button>
+              <button type="button" class="chip">Beveiliging &amp; compliance</button>
+              <button type="button" class="chip">Microsoft 365</button>
+              <button type="button" class="chip">Back-up &amp; continuïteit</button>
+              <button type="button" class="chip">Iets anders</button>
+            </div>
+            <input type="hidden" value="Volledige IT-partner">
+          </div>
+          <div class="step-actions">
+            <button class="btn btn-ghost-ink" type="button" data-prev>← Terug</button>
+            <button class="btn btn-gold" type="button" data-next>Volgende <span class="arr">→</span></button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step" hidden>
+          <h2 style="font-size:1.5rem; margin-bottom:6px;">Bijna klaar.</h2>
+          <p style="color:var(--ink-soft); margin:0 0 26px; font-size:.95rem;">Laat ons weten wanneer en hoe het u uitkomt.</p>
+          <div class="field" data-choice>
+            <label>Voorkeur voor contact</label>
+            <div class="chip-row">
+              <button type="button" class="chip sel">Telefonisch</button>
+              <button type="button" class="chip">Videocall</button>
+              <button type="button" class="chip">Op kantoor</button>
+            </div>
+            <input type="hidden" value="Telefonisch">
+          </div>
+          <div class="field" style="margin-top:30px;">
+            <label for="pf-msg">Toelichting <span style="text-transform:none; font-weight:400; color:var(--ink-soft);">(optioneel)</span></label>
+            <textarea id="pf-msg" placeholder="Waar wilt u het graag over hebben?"></textarea>
+          </div>
+          <div class="step-actions">
+            <button class="btn btn-ghost-ink" type="button" data-prev>← Terug</button>
+            <button class="btn btn-gold" type="submit">Verstuur aanvraag <span class="arr">→</span></button>
+          </div>
+        </div>
+      </form>
+
+      <div class="form-success" hidden>
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4.5 4.5L19 7"/></svg></div>
+        <h3>Dank u wel<span data-name-slot></span>!</h3>
+        <p style="color:var(--ink-soft); max-width:38ch; margin-inline:auto;">Uw aanvraag is binnen. Een van onze specialisten neemt binnen één werkdag persoonlijk contact met u op om een moment te plannen.</p>
+        <div style="margin-top:28px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn-ghost-ink" href="index.html">Terug naar home</a>
+          <a class="btn-link" href="diensten.html">Bekijk onze diensten <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer" data-screen-label="Footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand footer-col">
+        <a class="logo" href="index.html">
+          <span class="logo-mark"><span class="lm-1">L</span><span class="lm-2">L</span></span>
+          <span class="logo-word">LEGAL IT</span>
+        </a>
+        <p>Dé IT-partner voor notariskantoren. Strategie, architectuur en support — alles onder één dak.</p>
+        <p class="footer-tagline">Technologie met inzicht.<br>Ondersteuning met impact.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="oplossingen.html">Oplossingen</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="plan-een-gesprek.html">Plan een gesprek</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+31732200700">073 – 22 00 700</a></li>
+          <li><a href="mailto:info@legalit.nl">info@legalit.nl</a></li>
+          <li>Esscheweg 11, 5262 TT Vught</li>
+          <li>Chroomweg 45, 8471 XL Wolvega</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Gegevens</h4>
+        <ul>
+          <li>KvK: 94245678</li>
+          <li>BTW: NL865512345B01</li>
+          <li>IBAN: NL44 RABO 0123 4567 89</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Legal IT B.V. — Premium IT voor de juridische sector</span>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Voorwaarden</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
