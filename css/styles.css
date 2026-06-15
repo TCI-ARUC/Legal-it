@@ -585,3 +585,9 @@ html.has-pen input, html.has-pen textarea, html.has-pen select, html.has-pen [co
     position: static !important; top: auto !important;
   }
 }
+
+/* Telefoonlink in header / mobiel menu */
+.nav-tel { font-size: .8rem; font-weight: 600; letter-spacing: .04em; color: var(--gold); white-space: nowrap; transition: color .3s var(--ease); }
+.nav-tel:hover { color: var(--gold-soft); }
+.mobile-tel { color: var(--gold) !important; font-weight: 600; }
+@media (max-width: 980px) { .nav-tel { display: none; } }

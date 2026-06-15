@@ -122,6 +122,7 @@
         return;
       }
       var success = document.querySelector(form.getAttribute("data-success") || ".form-success");
+      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { event_category: "lead", form: "contact" });
       if (success) {
         form.style.display = "none";
         success.hidden = false;
@@ -199,6 +200,7 @@
       e.preventDefault();
       if (!validateStep(current)) return;
       var success = document.querySelector(".form-success");
+      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { event_category: "lead", form: "plan-een-gesprek" });
       if (success) {
         stepForm.style.display = "none";
         var prog = document.querySelector("[data-step-progress]");
@@ -330,7 +332,7 @@
     banner.innerHTML =
       '<p><strong>Cookies op deze website.</strong> We gebruiken analytische cookies om de website te ' +
       'verbeteren. U bepaalt zelf of we deze mogen plaatsen. Zie ons ' +
-      '<a href="#" data-cookie-privacy>privacybeleid</a>.</p>' +
+      '<a href="privacy.html" data-cookie-privacy>privacybeleid</a>.</p>' +
       '<div class="cookie-actions">' +
         '<button type="button" class="btn-cookie-ghost" data-cookie="denied">Weigeren</button>' +
         '<button type="button" class="btn btn-gold" data-cookie="granted">Accepteren</button>' +
@@ -346,4 +348,19 @@
       btn.addEventListener("click", function () { apply(btn.getAttribute("data-cookie")); close(); });
     });
   })();
+
+  /* ---- GA4 conversie-events (bellen / mailen / gesprek plannen) ---- */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a") : null;
+    if (!a || typeof window.gtag !== "function") return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("tel:") === 0) {
+      window.gtag("event", "click_telefoon", { event_category: "contact", transport_type: "beacon" });
+    } else if (href.indexOf("mailto:") === 0) {
+      window.gtag("event", "click_email", { event_category: "contact", transport_type: "beacon" });
+    } else if (href.indexOf("plan-een-gesprek") !== -1) {
+      window.gtag("event", "plan_gesprek_klik", { event_category: "lead" });
+    }
+  }, true);
 })();
+
