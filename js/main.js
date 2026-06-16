@@ -228,6 +228,14 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
+  /* ---- Hero-video: respecteer reduced-motion (toon poster) ---- */
+  if (reduceMotion) {
+    document.querySelectorAll("video.hero-video").forEach(function (v) {
+      v.removeAttribute("autoplay");
+      try { v.pause(); } catch (e) {}
+    });
+  }
+
   /* ---- Hero parallax-diepte ---- */
   var hero = document.querySelector('[data-screen-label="Hero"]');
   if (hero && finePointer && !reduceMotion) {
