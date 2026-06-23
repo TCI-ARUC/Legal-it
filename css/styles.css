@@ -615,3 +615,12 @@ html.has-pen input, html.has-pen textarea, html.has-pen select, html.has-pen [co
   body { padding-bottom: 56px; }
 }
 body.cookie-open .mobile-cta { display: none !important; }
+
+/* Team: contactregels onder de naam */
+.team-contact { margin-top: 6px; font-size: .85rem; line-height: 1.6; }
+.team-contact a { color: var(--gold-deep); text-decoration: none; }
+.team-contact a:hover { color: var(--gold); text-decoration: underline; }
+
+/* Algemene chips-mini (buiten sol-cards, bijv. partners-softwareblok) */
+.chips-mini { display: flex; flex-wrap: wrap; gap: 10px; }
+.chips-mini span { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--line); padding: 6px 14px; }
