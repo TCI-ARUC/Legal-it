@@ -61,6 +61,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://legal-it.nl/werkplek</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://legal-it.nl/compliance-reporting</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>

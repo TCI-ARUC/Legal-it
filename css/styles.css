@@ -624,3 +624,7 @@ body.cookie-open .mobile-cta { display: none !important; }
 /* Algemene chips-mini (buiten sol-cards, bijv. partners-softwareblok) */
 .chips-mini { display: flex; flex-wrap: wrap; gap: 10px; }
 .chips-mini span { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--line); padding: 6px 14px; }
+
+/* Schone witte kaart voor partnerlogo's (geen textuur/glow) */
+.ph-clean { background: #fff !important; }
+.ph-clean::before, .ph-clean::after { display: none !important; }
