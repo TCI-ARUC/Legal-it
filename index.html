@@ -29,18 +29,93 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Legal IT",
-  "url": "https://legal-it.nl/",
-  "logo": "https://legal-it.nl/images/logo-legal-it.png",
-  "image": "https://legal-it.nl/images/og-image.jpg",
-  "description": "Legal IT is de IT-partner voor notariskantoren en de legal branche: strategie, architectuur, security & compliance en support op basis van Microsoft 365.",
-  "email": "info@legalit.nl",
-  "telephone": "+31-73-2200700",
-  "areaServed": "NL",
-  "address": [
-    {"@type": "PostalAddress", "streetAddress": "Esscheweg 11", "postalCode": "5262 TT", "addressLocality": "Vught", "addressCountry": "NL"},
-    {"@type": "PostalAddress", "streetAddress": "Chroomweg 45", "postalCode": "8471 XL", "addressLocality": "Wolvega", "addressCountry": "NL"}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://legal-it.nl/#organization",
+      "name": "Legal IT B.V.",
+      "alternateName": "Legal IT",
+      "url": "https://legal-it.nl/",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "description": "Legal IT is de IT-partner voor notariskantoren en de legal branche: strategie, architectuur, security & compliance en support op basis van Microsoft 365.",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Esscheweg 11",
+          "postalCode": "5262 TT",
+          "addressLocality": "Vught",
+          "addressCountry": "NL"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Chroomweg 45",
+          "postalCode": "8471 XL",
+          "addressLocality": "Wolvega",
+          "addressCountry": "NL"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-vught",
+      "name": "Legal IT B.V. — Vught",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Esscheweg 11",
+        "postalCode": "5262 TT",
+        "addressLocality": "Vught",
+        "addressCountry": "NL"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-wolvega",
+      "name": "Legal IT B.V. — Wolvega",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chroomweg 45",
+        "postalCode": "8471 XL",
+        "addressLocality": "Wolvega",
+        "addressCountry": "NL"
+      }
+    }
   ]
 }
 </script>
@@ -201,6 +276,29 @@
   </div>
 </section>
 
+<!-- ============ DIENSTEN OVERZICHT ============ -->
+<section class="section cream" data-screen-label="Diensten in het kort">
+  <div class="wrap">
+    <div class="center reveal" style="max-width:680px; margin-inline:auto;">
+      <p class="eyebrow eyebrow--center eyebrow--plain" style="justify-content:center;"><span style="display:inline-block;width:34px;height:1px;background:var(--gold);margin-right:14px;"></span>Onze diensten<span style="display:inline-block;width:34px;height:1px;background:var(--gold);margin-left:14px;"></span></p>
+      <h2 class="h-sec" style="margin-top:22px;">Alles wat uw notariskantoor <span class="serif-italic gold-text">nodig heeft.</span></h2>
+      <p class="lead" style="margin:22px auto 0;">Van werkplek tot netwerk, telefonie en compliance — volledig beheerd door één partner.</p>
+    </div>
+    <div class="cols-4" style="margin-top:56px;">
+      <a class="approach-col reveal" href="/werkplek" data-delay="1"><h3 style="margin-top:6px;">Microsoft 365 Werkplek</h3><p>De moderne, veilige werkplek voor uw kantoor — volledig beheerd.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+      <a class="approach-col reveal" href="/managed-internetdiensten" data-delay="1"><h3 style="margin-top:6px;">Managed Internetdiensten</h3><p>Betrouwbare internetverbindingen, volledig beheerd en bewaakt.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+      <a class="approach-col reveal" href="/managed-firewall" data-delay="2"><h3 style="margin-top:6px;">Managed Firewall</h3><p>Maximale netwerkbeveiliging zonder beheerlast.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+      <a class="approach-col reveal" href="/lan-wifi" data-delay="2"><h3 style="margin-top:6px;">LAN &amp; WiFi</h3><p>Een snel, stabiel en veilig netwerk voor uw organisatie.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+      <a class="approach-col reveal" href="/voip-telefonie" data-delay="1"><h3 style="margin-top:6px;">VoIP Telefonie</h3><p>Modern communiceren zonder beperkingen, via internet.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+      <a class="approach-col reveal" href="/compliance-reporting" data-delay="2"><h3 style="margin-top:6px;">Compliance &amp; Reporting</h3><p>Inzicht, controle en aantoonbare naleving.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+      <a class="approach-col reveal" href="/mobiele-telefonie" data-delay="3"><h3 style="margin-top:6px;">Mobiele Telefonie</h3><p>Zakelijk mobiel via de grote Nederlandse providers.</p><span class="btn-link" style="margin-top:14px;">Meer <span class="arr">→</span></span></a>
+    </div>
+    <div class="center reveal" style="margin-top:48px;">
+      <a class="btn-link" href="/kennis">Lees onze kennisartikelen over IT, AI &amp; compliance <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ SPLIT FEATURE ============ -->
 <section class="section navy-2" data-screen-label="Waarom Legal IT">
   <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(36px,5vw,80px); align-items:center;">
@@ -239,12 +337,12 @@
     <div class="stats">
       <div class="stat reveal" data-delay="2">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 3v6c0 5-3.5 8-8 11-4.5-3-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
-        <span class="num" data-count="99.9" data-suffix="%">0</span>
+        <span class="num" data-count="99.9" data-suffix="%">99,9%</span>
         <span class="lab">Beschikbaarheid van diensten</span>
       </div>
       <div class="stat reveal" data-delay="3">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.6 5.5-4.6S14 16 14.6 19"/><circle cx="17.5" cy="9" r="2.4"/><path d="M16 14.2c2.3.2 3.8 1.6 4.3 4"/></svg>
-        <span class="num" data-count="20" data-suffix="+">0</span>
+        <span class="num" data-count="20" data-suffix="+">20+</span>
         <span class="lab">Specialisten voor u klaar</span>
       </div>
       <div class="stat reveal" data-delay="4">

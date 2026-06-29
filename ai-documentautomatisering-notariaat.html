@@ -29,6 +29,99 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://legal-it.nl/#organization",
+      "name": "Legal IT B.V.",
+      "alternateName": "Legal IT",
+      "url": "https://legal-it.nl/",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "description": "Legal IT is de IT-partner voor notariskantoren en de legal branche: strategie, architectuur, security & compliance en support op basis van Microsoft 365.",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Esscheweg 11",
+          "postalCode": "5262 TT",
+          "addressLocality": "Vught",
+          "addressCountry": "NL"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Chroomweg 45",
+          "postalCode": "8471 XL",
+          "addressLocality": "Wolvega",
+          "addressCountry": "NL"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-vught",
+      "name": "Legal IT B.V. — Vught",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Esscheweg 11",
+        "postalCode": "5262 TT",
+        "addressLocality": "Vught",
+        "addressCountry": "NL"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-wolvega",
+      "name": "Legal IT B.V. — Wolvega",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chroomweg 45",
+        "postalCode": "8471 XL",
+        "addressLocality": "Wolvega",
+        "addressCountry": "NL"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-documentautomatisering voor notariskantoren | Legal IT",
   "description": "AI-documentautomatisering in het notariaat: hoe notariskantoren conceptaktes, data-extractie en dossieropbouw versnellen met AI — nauwkeurig, gekoppeld en veilig.",
@@ -112,7 +205,7 @@
 
 <section class="section paper" data-screen-label="Documentautomatisering met AI body" style="border-top:1px solid var(--line-light);">
   <div class="wrap" style="max-width:820px;">
-    <div class="ph" style="aspect-ratio:16/9; width:100%; margin-bottom:36px;"><img src="images/ph-werkplek-teams.webp" alt="Moderne werkplek met documenten en laptop" loading="eager" onerror="this.style.display='none'"><span class="ph-label">Beeld</span></div>
+    <div class="ph" style="aspect-ratio:16/9; width:100%; margin-bottom:36px;"><img src="images/ph-werkplek-teams.webp" alt="Moderne werkplek met documenten en laptop" loading="eager" onerror="this.style.display='none'"><span class="ph-label">Documentautomatisering</span></div>
     <div class="flow reveal" style="display:flex; flex-direction:column; gap:14px;">
       <h2 class="h-sec" style="font-size:clamp(1.5rem,2.4vw,2rem); margin-top:24px;">Wat is documentautomatisering &mdash; en wat voegt AI toe?</h2>
       <p>Klassieke documentautomatisering werkt met sjablonen en clausulebibliotheken: u vult gegevens in een formulier of intakescherm in en het systeem genereert een document met de juiste tekstblokken. Dat is betrouwbaar en voorspelbaar, en het is al jaren de ruggengraat van veel notari&euml;le software. Het nadeel: het vraagt nog veel handmatige invoer, het onderhoud van modellen kost tijd, en variatie in aangeleverde informatie moet steeds opnieuw handmatig worden verwerkt.</p>
