@@ -29,18 +29,141 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Legal IT",
-  "url": "https://legal-it.nl/",
-  "logo": "https://legal-it.nl/images/logo-legal-it.png",
-  "image": "https://legal-it.nl/images/og-image.jpg",
-  "description": "Legal IT is de IT-partner voor notariskantoren en de legal branche: strategie, architectuur, security & compliance en support op basis van Microsoft 365.",
-  "email": "info@legalit.nl",
-  "telephone": "+31-73-2200700",
-  "areaServed": "NL",
-  "address": [
-    {"@type": "PostalAddress", "streetAddress": "Esscheweg 11", "postalCode": "5262 TT", "addressLocality": "Vught", "addressCountry": "NL"},
-    {"@type": "PostalAddress", "streetAddress": "Chroomweg 45", "postalCode": "8471 XL", "addressLocality": "Wolvega", "addressCountry": "NL"}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://legal-it.nl/#organization",
+      "name": "Legal IT B.V.",
+      "alternateName": "Legal IT",
+      "url": "https://legal-it.nl/",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "description": "Legal IT is de IT-partner voor notariskantoren en de legal branche: strategie, architectuur, security & compliance en support op basis van Microsoft 365.",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Esscheweg 11",
+          "postalCode": "5262 TT",
+          "addressLocality": "Vught",
+          "addressCountry": "NL"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Chroomweg 45",
+          "postalCode": "8471 XL",
+          "addressLocality": "Wolvega",
+          "addressCountry": "NL"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-vught",
+      "name": "Legal IT B.V. — Vught",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Esscheweg 11",
+        "postalCode": "5262 TT",
+        "addressLocality": "Vught",
+        "addressCountry": "NL"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-wolvega",
+      "name": "Legal IT B.V. — Wolvega",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legalit.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chroomweg 45",
+        "postalCode": "8471 XL",
+        "addressLocality": "Wolvega",
+        "addressCountry": "NL"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Werken jullie specifiek voor notariskantoren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Legal IT richt zich volledig op de juridische sector, met name notariskantoren. We kennen de eisen rond vertrouwelijkheid, continuïteit en compliance en hebben onze oplossingen daar volledig op afgestemd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de kosten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U betaalt een vaste maandprijs op basis van het aantal gebruikers en de gekozen diensten. Transparant en voorspelbaar, inclusief support en beheer. In een voorstel op maat ziet u precies wat u krijgt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verloopt de overstap?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wij verzorgen de volledige migratie en plannen deze zo dat uw kantoor er nauwelijks iets van merkt. U krijgt een vast implementatieteam en duidelijke afspraken over planning en impact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is mijn data veilig en AVG-proof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beveiliging en compliance vormen de basis van alles wat we doen. Met Microsoft Defender, Multi-Factor Authentication, versleuteling en heldere toegangsrechten zorgen we dat uw gegevens beschermd zijn en blijven voldoen aan wet- en regelgeving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik jullie bellen als er iets is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Altijd. U heeft vaste contactpersonen en korte lijnen — geen anonieme ticketnummers. Onze helpdesk is snel bereikbaar en kent uw omgeving."
+      }
+    }
   ]
 }
 </script>
