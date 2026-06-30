@@ -91,6 +91,36 @@
     });
   });
 
+  /* ---- Form verzending (FormSubmit AJAX) ---- */
+  function liPostForm(form) {
+    var endpoint = form.getAttribute("data-endpoint");
+    if (!endpoint) return Promise.resolve(true); // geen endpoint = alleen UI
+    return fetch(endpoint, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    }).then(function (r) { return r.ok; }).catch(function () { return false; });
+  }
+  function liFormError(form) {
+    var box = form.querySelector("[data-form-error]");
+    if (!box) {
+      box = document.createElement("p");
+      box.setAttribute("data-form-error", "");
+      box.style.cssText = "color:#b3261e; font-size:.85rem; margin:14px 0 0; text-align:center;";
+      form.appendChild(box);
+    }
+    box.textContent = "Er ging iets mis bij het versturen. Probeer het opnieuw of mail naar info@legalit.nl.";
+  }
+  function liSubmitForm(form, onSuccess) {
+    var btn = form.querySelector("[type=submit]");
+    var label = btn ? btn.innerHTML : "";
+    if (btn) { btn.disabled = true; btn.textContent = "Versturen…"; }
+    liPostForm(form).then(function (ok) {
+      if (ok) { onSuccess(); }
+      else { if (btn) { btn.disabled = false; btn.innerHTML = label; } liFormError(form); }
+    });
+  }
+
   /* ---- Form validation ---- */
   document.querySelectorAll("form[data-validate]").forEach(function (form) {
     var fields = form.querySelectorAll("[required]");
@@ -121,16 +151,18 @@
         if (firstBad) firstBad.focus();
         return;
       }
-      var success = document.querySelector(form.getAttribute("data-success") || ".form-success");
-      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { event_category: "lead", form: "contact" });
-      if (success) {
-        form.style.display = "none";
-        success.hidden = false;
-        success.classList.add("in");
-        var name = form.querySelector("[data-name-field]");
-        var slot = success.querySelector("[data-name-slot]");
-        if (name && slot && name.value.trim()) slot.textContent = " " + name.value.trim().split(" ")[0];
-      }
+      liSubmitForm(form, function () {
+        var success = document.querySelector(form.getAttribute("data-success") || ".form-success");
+        if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { event_category: "lead", form: "contact" });
+        if (success) {
+          form.style.display = "none";
+          success.hidden = false;
+          success.classList.add("in");
+          var name = form.querySelector("[data-name-field]");
+          var slot = success.querySelector("[data-name-slot]");
+          if (name && slot && name.value.trim()) slot.textContent = " " + name.value.trim().split(" ")[0];
+        }
+      });
     });
   });
 
@@ -199,17 +231,19 @@
     stepForm.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!validateStep(current)) return;
-      var success = document.querySelector(".form-success");
-      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { event_category: "lead", form: "plan-een-gesprek" });
-      if (success) {
-        stepForm.style.display = "none";
-        var prog = document.querySelector("[data-step-progress]");
-        if (prog) prog.style.display = "none";
-        success.hidden = false; success.classList.add("in");
-        var name = stepForm.querySelector("[data-name-field]");
-        var slot = success.querySelector("[data-name-slot]");
-        if (name && slot && name.value.trim()) slot.textContent = " " + name.value.trim().split(" ")[0];
-      }
+      liSubmitForm(stepForm, function () {
+        var success = document.querySelector(".form-success");
+        if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { event_category: "lead", form: "plan-een-gesprek" });
+        if (success) {
+          stepForm.style.display = "none";
+          var prog = document.querySelector("[data-step-progress]");
+          if (prog) prog.style.display = "none";
+          success.hidden = false; success.classList.add("in");
+          var name = stepForm.querySelector("[data-name-field]");
+          var slot = success.querySelector("[data-name-slot]");
+          if (name && slot && name.value.trim()) slot.textContent = " " + name.value.trim().split(" ")[0];
+        }
+      });
     });
     show(0);
   }

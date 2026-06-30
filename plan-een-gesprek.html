@@ -211,7 +211,10 @@
         <div class="step-dot" data-step-dot><div class="dot">3</div><div class="lbl">Voorkeur</div></div>
       </div>
 
-      <form data-steps novalidate>
+      <form data-steps data-endpoint="https://formsubmit.co/ajax/info@legalit.nl" novalidate>
+        <input type="hidden" name="_subject" value="Nieuwe aanvraag: plan een gesprek (legal-it.nl)">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;" aria-hidden="true">
         <!-- STEP 1 -->
         <div class="step">
           <h2 style="font-size:1.5rem; margin-bottom:6px;">Met wie hebben we het genoegen?</h2>
@@ -219,24 +222,24 @@
           <div class="field-row">
             <div class="field">
               <label for="pf-name">Naam</label>
-              <input id="pf-name" type="text" required data-name-field placeholder="Voor- en achternaam">
+              <input id="pf-name" name="naam" type="text" required data-name-field placeholder="Voor- en achternaam">
               <span class="err">Vul uw naam in.</span>
             </div>
             <div class="field">
               <label for="pf-office">Kantoor</label>
-              <input id="pf-office" type="text" required placeholder="Naam notariskantoor">
+              <input id="pf-office" name="kantoor" type="text" required placeholder="Naam notariskantoor">
               <span class="err">Vul de kantoornaam in.</span>
             </div>
           </div>
           <div class="field-row">
             <div class="field">
               <label for="pf-email">E-mail</label>
-              <input id="pf-email" type="email" required placeholder="naam@kantoor.nl">
+              <input id="pf-email" name="email" type="email" required placeholder="naam@kantoor.nl">
               <span class="err">Vul een geldig e-mailadres in.</span>
             </div>
             <div class="field">
               <label for="pf-phone">Telefoon</label>
-              <input id="pf-phone" type="tel" required placeholder="06 – 12 34 56 78">
+              <input id="pf-phone" name="telefoon" type="tel" required placeholder="06 – 12 34 56 78">
               <span class="err">Vul een geldig telefoonnummer in.</span>
             </div>
           </div>
@@ -258,7 +261,7 @@
               <button type="button" class="chip">15 – 30</button>
               <button type="button" class="chip">30+</button>
             </div>
-            <input type="hidden" value="5 – 15">
+            <input type="hidden" name="medewerkers" value="5 – 15">
           </div>
           <div class="field" data-choice data-multi style="margin-top:30px;">
             <label>Waar gaat het vooral om? <span style="text-transform:none; font-weight:400; color:var(--ink-soft);">(meerdere mogelijk)</span></label>
@@ -269,7 +272,7 @@
               <button type="button" class="chip">Back-up &amp; continuïteit</button>
               <button type="button" class="chip">Iets anders</button>
             </div>
-            <input type="hidden" value="Volledige IT-partner">
+            <input type="hidden" name="onderwerp" value="Volledige IT-partner">
           </div>
           <div class="step-actions">
             <button class="btn btn-ghost-ink" type="button" data-prev>← Terug</button>
@@ -288,11 +291,11 @@
               <button type="button" class="chip">Videocall</button>
               <button type="button" class="chip">Op kantoor</button>
             </div>
-            <input type="hidden" value="Telefonisch">
+            <input type="hidden" name="contactvoorkeur" value="Telefonisch">
           </div>
           <div class="field" style="margin-top:30px;">
             <label for="pf-msg">Toelichting <span style="text-transform:none; font-weight:400; color:var(--ink-soft);">(optioneel)</span></label>
-            <textarea id="pf-msg" placeholder="Waar wilt u het graag over hebben?"></textarea>
+            <textarea id="pf-msg" name="toelichting" placeholder="Waar wilt u het graag over hebben?"></textarea>
           </div>
           <div class="step-actions">
             <button class="btn btn-ghost-ink" type="button" data-prev>← Terug</button>

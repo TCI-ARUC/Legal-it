@@ -232,7 +232,10 @@
     <div class="reveal" data-delay="1" style="background:#fff; border:1px solid var(--line-light); padding:clamp(28px,4vw,48px); box-shadow:var(--shadow-sm);">
       <h2 style="font-size:1.7rem; margin-bottom:8px;">Stuur ons een bericht</h2>
       <p style="color:var(--ink-soft); margin:0 0 28px; font-size:.95rem;">We nemen meestal binnen één werkdag contact met u op.</p>
-      <form data-validate data-success="#contactSuccess" novalidate>
+      <form data-validate data-success="#contactSuccess" data-endpoint="https://formsubmit.co/ajax/info@legalit.nl" novalidate>
+        <input type="hidden" name="_subject" value="Nieuw contactbericht via legal-it.nl">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;" aria-hidden="true">
         <div class="field-row">
           <div class="field">
             <label for="cf-name">Uw naam</label>
