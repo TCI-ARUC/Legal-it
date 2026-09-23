@@ -109,7 +109,7 @@
       box.style.cssText = "color:#b3261e; font-size:.85rem; margin:14px 0 0; text-align:center;";
       form.appendChild(box);
     }
-    box.textContent = "Er ging iets mis bij het versturen. Probeer het opnieuw of mail naar info@legalit.nl.";
+    box.textContent = "Er ging iets mis bij het versturen. Probeer het opnieuw of mail naar info@legal-it.nl.";
   }
   function liSubmitForm(form, onSuccess) {
     var btn = form.querySelector("[type=submit]");
