@@ -5,6 +5,7 @@
 ## Over
 - Doelgroepen: advocatenkantoren, accountants- en administratiekantoren, notariskantoren.
 - Diensten: Microsoft 365 (werkplek, beheer, security & compliance), AI-oplossingen (Microsoft 365 Copilot, transcriptie en verslaglegging van overleggen, AI-beleid), kantoorautomatisering (o.a. Power Automate), cybersecurity (SentinelOne EDR, MFA), veilig mailen (Bastion365), back-up & herstel, managed firewall met FortiGate, Xelion-cloudtelefonie en mobiele telefonie, zakelijke verbindingen (glasvezel) en LAN & WiFi.
+- Informatiebeveiliging: werkwijze volgens ISO 27001, certificering verwacht in Q1 2027. Alle medewerkers hebben een VOG en geheimhoudingsverklaring; elke klant krijgt standaard een verwerkersovereenkomst.
 - Officieel partner van Microsoft, Fortinet en Xelion. Voor het notariaat: Nobilex en Donna James.
 - Kernwaarden: vertrouwen voorop, persoonlijk en betrokken, vooruitdenken, transparant (vaste maandprijs).
 
@@ -26,6 +27,8 @@
 - [Zakelijke verbindingen & netwerk](https://legal-it.nl/netwerk-connectiviteit)
 
 ## Overige pagina's
+- [Informatiebeveiliging & ISO 27001](https://legal-it.nl/informatiebeveiliging): uitleg van ISO 27001 en de status van Legal IT.
+- [Checklist: 8 vragen voor uw IT-partner](https://legal-it.nl/checklist-ict-partner)
 - [Over ons](https://legal-it.nl/over-ons): verhaal, waarden en team van Legal IT.
 - [Partners](https://legal-it.nl/partners): Microsoft, Fortinet, Xelion, Nobilex en Donna James.
 - [Kennis](https://legal-it.nl/kennis): artikelen over IT, AI, security en compliance.

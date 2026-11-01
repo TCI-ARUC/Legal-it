@@ -85,6 +85,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://legal-it.nl/informatiebeveiliging</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legal-it.nl/checklist-ict-partner</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://legal-it.nl/plan-een-gesprek</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
