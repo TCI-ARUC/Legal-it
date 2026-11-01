@@ -31,7 +31,7 @@
 - [Checklist: 8 vragen voor uw IT-partner](https://legal-it.nl/checklist-ict-partner)
 - [Over ons](https://legal-it.nl/over-ons): verhaal, waarden en team van Legal IT.
 - [Partners](https://legal-it.nl/partners): Microsoft, Fortinet, Xelion, Nobilex en Donna James.
-- [Kennis](https://legal-it.nl/kennis): artikelen over IT, AI, security en compliance.
+- [Kennis](https://legal-it.nl/kennis): artikelen over IT, AI, security en compliance, o.a. [AI-beleid voor advocatenkantoren](https://legal-it.nl/ai-beleid-advocatenkantoor), [Cybersecurity voor accountantskantoren](https://legal-it.nl/cybersecurity-accountantskantoor) en [AI in het notariaat](https://legal-it.nl/ai-in-het-notariaat).
 - [Contact](https://legal-it.nl/contact) en [Plan een gesprek](https://legal-it.nl/plan-een-gesprek).
 
 ## Contact
