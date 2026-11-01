@@ -4,7 +4,7 @@
 
 ## Over
 - Doelgroepen: advocatenkantoren, accountants- en administratiekantoren, notariskantoren.
-- Diensten: Microsoft 365 (werkplek, beheer, security & compliance), AI-oplossingen (o.a. Microsoft 365 Copilot, AI-beleid), automatisering (o.a. Power Automate), managed firewall met FortiGate, Xelion-cloudtelefonie en mobiele telefonie, zakelijke verbindingen (glasvezel) en LAN & WiFi.
+- Diensten: Microsoft 365 (werkplek, beheer, security & compliance), AI-oplossingen (Microsoft 365 Copilot, transcriptie en verslaglegging van overleggen, AI-beleid), kantoorautomatisering (o.a. Power Automate), cybersecurity (SentinelOne EDR, MFA), veilig mailen (Bastion365), back-up & herstel, managed firewall met FortiGate, Xelion-cloudtelefonie en mobiele telefonie, zakelijke verbindingen (glasvezel) en LAN & WiFi.
 - Officieel partner van Microsoft, Fortinet en Xelion. Voor het notariaat: Nobilex en Donna James.
 - Kernwaarden: vertrouwen voorop, persoonlijk en betrokken, vooruitdenken, transparant (vaste maandprijs).
 
@@ -17,8 +17,11 @@
 - [Diensten overzicht](https://legal-it.nl/diensten)
 - [Microsoft 365 Werkplek](https://legal-it.nl/werkplek)
 - [Microsoft 365-beheer & Compliance](https://legal-it.nl/microsoft-365-beheer)
-- [AI-oplossingen & automatiseren](https://legal-it.nl/ai-automatisering)
+- [AI, Copilot & kantoorautomatisering](https://legal-it.nl/ai-automatisering)
 - [Managed Firewall (FortiGate)](https://legal-it.nl/managed-firewall)
+- [Cybersecurity](https://legal-it.nl/cybersecurity): SentinelOne EDR, MFA, security-awareness, incidentrespons.
+- [Veilig mailen met Bastion365](https://legal-it.nl/veilig-mailen)
+- [Back-up & herstel van Microsoft 365](https://legal-it.nl/backup)
 - [Xelion-telefonie & mobiele telefonie](https://legal-it.nl/telefonie-oplossingen)
 - [Zakelijke verbindingen & netwerk](https://legal-it.nl/netwerk-connectiviteit)
 
