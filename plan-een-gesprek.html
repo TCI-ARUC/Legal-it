@@ -266,14 +266,24 @@
           <h2 style="font-size:1.5rem; margin-bottom:6px;">Vertel iets over uw kantoor.</h2>
           <p style="color:var(--ink-soft); margin:0 0 26px; font-size:.95rem;">Zo kunnen we het gesprek goed voorbereiden.</p>
           <div class="field" data-choice>
+            <label>Type kantoor</label>
+            <div class="chip-row">
+              <button type="button" class="chip sel">Advocatenkantoor</button>
+              <button type="button" class="chip">Accountants- of administratiekantoor</button>
+              <button type="button" class="chip">Notariskantoor</button>
+              <button type="button" class="chip">Anders</button>
+            </div>
+            <input type="hidden" name="type_kantoor" value="Advocatenkantoor">
+          </div>
+          <div class="field" data-choice style="margin-top:30px;">
             <label>Aantal medewerkers</label>
             <div class="chip-row">
               <button type="button" class="chip">1 – 5</button>
-              <button type="button" class="chip sel">5 – 15</button>
-              <button type="button" class="chip">15 – 30</button>
+              <button type="button" class="chip sel">6 – 15</button>
+              <button type="button" class="chip">16 – 30</button>
               <button type="button" class="chip">30+</button>
             </div>
-            <input type="hidden" name="medewerkers" value="5 – 15">
+            <input type="hidden" name="medewerkers" value="6 – 15">
           </div>
           <div class="field" data-choice data-multi style="margin-top:30px;">
             <label>Waar gaat het vooral om? <span style="text-transform:none; font-weight:400; color:var(--ink-soft);">(meerdere mogelijk)</span></label>
@@ -282,6 +292,8 @@
               <button type="button" class="chip">Beveiliging &amp; compliance</button>
               <button type="button" class="chip">Microsoft 365</button>
               <button type="button" class="chip">Back-up &amp; continuïteit</button>
+              <button type="button" class="chip">AI &amp; automatisering</button>
+              <button type="button" class="chip">Telefonie &amp; verbindingen</button>
               <button type="button" class="chip">Iets anders</button>
             </div>
             <input type="hidden" name="onderwerp" value="Volledige IT-partner">
@@ -376,7 +388,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Legal IT B.V. — Premium IT voor de juridische sector</span>
+      <span>© <span data-year>2026</span> Legal IT B.V. — Premium IT voor de juridische en financiële sector</span>
       <div class="footer-legal">
         <a href="/privacy">Privacy</a>
         <a href="#">Voorwaarden</a>
