@@ -1,22 +1,34 @@
 # Legal IT
 
-> Legal IT is dé IT-partner voor notariskantoren (en de bredere legal branche). Wij combineren de kracht van Microsoft 365 met een doordachte architectuur en premium service, met focus op veiligheid, compliance en continuïteit. Gevestigd in Vught en Wolvega, actief in heel Nederland.
+> Legal IT is dé IT-partner voor advocatenkantoren, accountants- en administratiekantoren en notariskantoren. Wij leveren en beheren Microsoft 365, AI-oplossingen en automatisering, managed firewall (FortiGate), Xelion-telefonie en zakelijke verbindingen — veilig, volledig beheerd en tegen een vaste maandprijs. Gevestigd in Vught en Wolvega, actief in heel Nederland.
 
 ## Over
-- Specialisatie: IT voor notariskantoren en advocatuur — strategie, architectuur, security & compliance en support, alles onder één dak.
+- Doelgroepen: advocatenkantoren, accountants- en administratiekantoren, notariskantoren.
+- Diensten: Microsoft 365 (werkplek, beheer, security & compliance), AI-oplossingen (o.a. Microsoft 365 Copilot, AI-beleid), automatisering (o.a. Power Automate), managed firewall met FortiGate, Xelion-cloudtelefonie en mobiele telefonie, zakelijke verbindingen (glasvezel) en LAN & WiFi.
+- Officieel partner van Microsoft, Fortinet en Xelion. Voor het notariaat: Nobilex en Donna James.
 - Kernwaarden: vertrouwen voorop, persoonlijk en betrokken, vooruitdenken, transparant (vaste maandprijs).
-- Basis: Microsoft 365, met nadruk op security, compliance en continuïteit.
 
-## Pagina's
-- [Home](https://legal-it.nl/): introductie, aanpak en waarom Legal IT.
-- [Diensten](https://legal-it.nl/diensten.html): werkplek & Teams, security & compliance, back-up & continuïteit, netwerk en support.
-- [Oplossingen](https://legal-it.nl/oplossingen.html): IT-oplossingen toegespitst op de legal branche.
-- [Over ons](https://legal-it.nl/over-ons.html): verhaal, waarden en team van Legal IT.
-- [Partners](https://legal-it.nl/partners.html): samenwerkingspartners (o.a. Donna James en Nobilex).
-- [Contact](https://legal-it.nl/contact.html): contactgegevens en bereikbaarheid.
-- [Plan een gesprek](https://legal-it.nl/plan-een-gesprek.html): vrijblijvend kennismakingsgesprek aanvragen.
+## Voor wie
+- [ICT voor advocatenkantoren](https://legal-it.nl/ict-voor-advocatenkantoren): veilige IT met oog voor het beroepsgeheim, AI in de advocatuur.
+- [ICT voor accountantskantoren](https://legal-it.nl/ict-voor-accountantskantoren): beveiliging van klantdata, continuïteit en automatisering.
+- [ICT voor notariskantoren](https://legal-it.nl/ict-voor-notariskantoren): Microsoft 365, Nobilex en Donna James.
+
+## Diensten
+- [Diensten overzicht](https://legal-it.nl/diensten)
+- [Microsoft 365 Werkplek](https://legal-it.nl/werkplek)
+- [Microsoft 365-beheer & Compliance](https://legal-it.nl/microsoft-365-beheer)
+- [AI-oplossingen & automatiseren](https://legal-it.nl/ai-automatisering)
+- [Managed Firewall (FortiGate)](https://legal-it.nl/managed-firewall)
+- [Xelion-telefonie & mobiele telefonie](https://legal-it.nl/telefonie-oplossingen)
+- [Zakelijke verbindingen & netwerk](https://legal-it.nl/netwerk-connectiviteit)
+
+## Overige pagina's
+- [Over ons](https://legal-it.nl/over-ons): verhaal, waarden en team van Legal IT.
+- [Partners](https://legal-it.nl/partners): Microsoft, Fortinet, Xelion, Nobilex en Donna James.
+- [Kennis](https://legal-it.nl/kennis): artikelen over IT, AI, security en compliance.
+- [Contact](https://legal-it.nl/contact) en [Plan een gesprek](https://legal-it.nl/plan-een-gesprek).
 
 ## Contact
 - Telefoon: 073 – 22 00 700
-- E-mail: info@legalit.nl
+- E-mail: info@legal-it.nl
 - Adressen: Esscheweg 11, 5262 TT Vught — Chroomweg 45, 8471 XL Wolvega

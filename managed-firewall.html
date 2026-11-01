@@ -3,13 +3,538 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://legal-it.nl/netwerk-connectiviteit">
-<meta http-equiv="refresh" content="0; url=/netwerk-connectiviteit">
-<title>Netwerk &amp; Connectiviteit — Legal IT</title>
-<script>window.location.replace("/netwerk-connectiviteit");</script>
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png?v=2">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<title>Managed Firewall met FortiGate — volledig beheerd | Legal IT</title>
+<meta name="description" content="Managed firewall met FortiGate: als officieel Fortinet-partner leveren, configureren en bewaken wij uw firewall. Vaste maandprijs, continue monitoring en updates. Legal IT.">
+<link rel="canonical" href="https://legal-it.nl/managed-firewall">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Legal IT">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Managed Firewall met FortiGate — volledig beheerd | Legal IT">
+<meta property="og:description" content="Managed firewall met FortiGate: als officieel Fortinet-partner leveren, configureren en bewaken wij uw firewall. Vaste maandprijs, continue monitoring en updates. Legal IT.">
+<meta property="og:url" content="https://legal-it.nl/managed-firewall">
+<meta property="og:image" content="https://legal-it.nl/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Managed Firewall met FortiGate — volledig beheerd | Legal IT">
+<meta name="twitter:description" content="Managed firewall met FortiGate: als officieel Fortinet-partner leveren, configureren en bewaken wij uw firewall. Vaste maandprijs, continue monitoring en updates. Legal IT.">
+<meta name="twitter:image" content="https://legal-it.nl/images/og-image.jpg">
+<meta name="theme-color" content="#0B1F3A">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://legal-it.nl/#organization",
+      "name": "Legal IT B.V.",
+      "alternateName": "Legal IT",
+      "url": "https://legal-it.nl/",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "description": "Legal IT is de IT-partner voor advocatenkantoren, accountantskantoren en notariskantoren: Microsoft 365, AI-oplossingen en automatisering, managed firewall (FortiGate), Xelion-telefonie en zakelijke verbindingen — veilig en volledig beheerd.",
+      "email": "info@legal-it.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Esscheweg 11",
+          "postalCode": "5262 TT",
+          "addressLocality": "Vught",
+          "addressCountry": "NL"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Chroomweg 45",
+          "postalCode": "8471 XL",
+          "addressLocality": "Wolvega",
+          "addressCountry": "NL"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-vught",
+      "name": "Legal IT B.V. — Vught",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legal-it.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Esscheweg 11",
+        "postalCode": "5262 TT",
+        "addressLocality": "Vught",
+        "addressCountry": "NL"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://legal-it.nl/#vestiging-wolvega",
+      "name": "Legal IT B.V. — Wolvega",
+      "parentOrganization": {
+        "@id": "https://legal-it.nl/#organization"
+      },
+      "url": "https://legal-it.nl/",
+      "image": "https://legal-it.nl/images/og-image.jpg",
+      "logo": "https://legal-it.nl/images/logo-legal-it.png",
+      "email": "info@legal-it.nl",
+      "telephone": "+31-73-2200700",
+      "areaServed": "NL",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "KvK",
+        "value": "96857951"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chroomweg 45",
+        "postalCode": "8471 XL",
+        "addressLocality": "Wolvega",
+        "addressCountry": "NL"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Managed Firewall",
+  "serviceType": "Managed Firewall",
+  "description": "Levering, configuratie, monitoring en beheer van FortiGate-firewalls door Legal IT, officieel Fortinet-partner.",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://legal-it.nl/#organization",
+    "name": "Legal IT B.V."
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Nederland"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Advocatenkantoren, accountantskantoren en notariskantoren"
+  },
+  "url": "https://legal-it.nl/managed-firewall",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Managed Firewall",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "FortiGate-firewall"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Monitoring en beheer"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VPN voor thuiswerken"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Inbraakpreventie en webfiltering"
+        }
+      }
+    ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Fortinet FortiGate"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een managed firewall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bij een managed firewall koopt u niet alleen een firewall, maar besteedt u ook het beheer uit. Wij installeren en configureren de FortiGate, bewaken hem continu, voeren updates uit en passen de instellingen aan als uw kantoor verandert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost een managed firewall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U betaalt een vaste maandprijs, afhankelijk van het FortiGate-model dat bij uw kantoor past, het aantal gebruikers en de gewenste beveiligingsdiensten. Hardware, licenties en beheer kunnen we in één bedrag per maand onderbrengen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom kiezen jullie voor FortiGate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FortiGate van Fortinet is een van de meest gebruikte zakelijke firewalls ter wereld. Het combineert firewall, inbraakpreventie, webfiltering en veilige VPN in één apparaat, met centraal beheer. Als officiële Fortinet-partner hebben wij de kennis en directe lijnen om dat optimaal in te zetten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen medewerkers veilig thuiswerken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Met een beveiligde VPN-verbinding via de FortiGate werken medewerkers vanuit huis of onderweg net zo veilig als op kantoor. Wij richten dit in en koppelen het aan multi-factor authenticatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er bij een storing of aanval?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wij monitoren uw firewall continu en ontvangen meldingen bij afwijkingen. We grijpen direct in, informeren u en lossen het probleem op — vaak voordat u er iets van merkt."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://legal-it.nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Diensten",
+      "item": "https://legal-it.nl/diensten"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Managed Firewall",
+      "item": "https://legal-it.nl/managed-firewall"
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z217VMHHQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500
+  });
+  try { if (localStorage.getItem('li-cookie-consent') === 'granted') {
+      gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+  } } catch (e) {}
+  gtag('js', new Date());
+  gtag('config', 'G-7Z217VMHHQ');
+</script>
+<link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-<p>Managed Firewall maakt nu deel uit van onze <a href="/netwerk-connectiviteit">Netwerk &amp; Connectiviteit</a>-pagina. U wordt automatisch doorgestuurd.</p>
+
+<header class="site-header" data-screen-label="Header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Legal IT home">
+      <picture><source srcset="images/logo-legal-it-header.webp" type="image/webp"><img src="images/logo-legal-it-header.png" alt="Legal IT" class="logo-img"></picture>
+    </a>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <ul class="nav-links">
+        <li><a href="/diensten" class="active">Diensten &amp; Oplossingen</a></li>
+        <li class="has-sub"><a href="/#voor-wie">Voor wie</a>
+          <ul class="sub">
+            <li><a href="/ict-voor-advocatenkantoren">Advocatenkantoren</a></li>
+            <li><a href="/ict-voor-accountantskantoren">Accountantskantoren</a></li>
+            <li><a href="/ict-voor-notariskantoren">Notariskantoren</a></li>
+          </ul>
+        </li>
+        <li><a href="/over-ons">Over ons</a></li>
+        <li><a href="/partners">Partners</a></li>
+        <li><a href="/kennis">Kennis</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <a class="nav-tel" href="tel:+31732200700" aria-label="Bel Legal IT">073 &ndash; 22 00 700</a>
+      <a class="btn btn-gold nav-cta" href="/plan-een-gesprek">Plan een gesprek</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu openen"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="/diensten">Diensten &amp; Oplossingen</a>
+  <span class="mobile-label">Voor wie</span>
+  <a class="mobile-sub" href="/ict-voor-advocatenkantoren">Advocatenkantoren</a>
+  <a class="mobile-sub" href="/ict-voor-accountantskantoren">Accountantskantoren</a>
+  <a class="mobile-sub" href="/ict-voor-notariskantoren">Notariskantoren</a>
+  <a href="/over-ons">Over ons</a>
+  <a href="/partners">Partners</a>
+  <a href="/kennis">Kennis</a>
+  <a href="/contact">Contact</a>
+  <a class="mobile-tel" href="tel:+31732200700">073 &ndash; 22 00 700</a>
+  <a class="btn btn-gold" href="/plan-een-gesprek">Plan een gesprek</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="navy page-hero" data-screen-label="Managed Firewall hero">
+  <div class="wrap">
+    <p class="crumb reveal"><a href="/">Home</a> &nbsp;/&nbsp; <a href="/diensten">Diensten</a> &nbsp;/&nbsp; Managed Firewall</p>
+    <p class="eyebrow reveal">Managed Firewall &middot; FortiGate</p>
+    <h1 class="display reveal" data-delay="1" style="margin-top:24px; max-width:22ch; font-size:clamp(2.4rem,5vw,4rem);">Managed Firewall <span class="gold-text serif-italic">met FortiGate.</span></h1>
+    <p class="lead reveal" data-delay="2" style="max-width:62ch;">Een firewall is de eerste verdedigingslinie van uw kantoor &mdash; maar alleen als hij goed is ingesteld en continu wordt beheerd. Als offici&euml;le Fortinet-partner leveren, configureren en beheren wij uw FortiGate-firewall, zodat u zich daar nooit meer zorgen over hoeft te maken.</p>
+  </div>
+</section>
+
+<section class="section paper" data-screen-label="Wat is een managed firewall?" style="border-top:1px solid var(--line-light);">
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(36px,5vw,80px); align-items:center;">
+    <div class="reveal">
+      <div class="ph" style="aspect-ratio:1280/792; width:100%;">
+        <img src="images/dienst-firewall.webp" alt="FortiGate managed firewall voor de netwerkbeveiliging van een kantoor" loading="lazy" onerror="this.style.display='none'"><span class="ph-label">Firewall &amp; beveiliging</span>
+      </div>
+    </div>
+    <div class="reveal" data-delay="1">
+      <p class="eyebrow">Wat is een managed firewall?</p>
+      <h2 class="h-sec" style="margin-top:14px;">Beveiliging die niet stilstaat.</h2>
+      <div class="flow lead" style="color:var(--ink-soft); margin-top:18px;">
+        <p>Cyberdreigingen veranderen dagelijks. Een firewall die ooit is ge&iuml;nstalleerd en daarna vergeten, biedt al snel onvoldoende bescherming. Verouderde firmware, open poorten of verkeerde regels zijn een veelvoorkomende oorzaak van inbraken.</p>
+        <p>Met onze Managed Firewall nemen wij het volledige beheer, onderhoud en de monitoring van uw FortiGate uit handen. U heeft een vaste maandprijs en &eacute;&eacute;n aanspreekpunt.</p>
+      </div>
+      <ul class="svc-list" style="margin-top:26px;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>FortiGate next-generation firewall, passend bij de omvang van uw kantoor</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Continue monitoring en directe opvolging van meldingen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Firmware-updates en beveiligingspatches, altijd up-to-date</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Wijzigingen in regels en toegang snel doorgevoerd</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Heldere rapportage over dreigingen en gebruik</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" data-screen-label="Wat zit erin">
+  <div class="wrap">
+    <div class="reveal" style="max-width:720px;">
+      <p class="eyebrow">Wat zit erin</p>
+      <h2 class="h-sec" style="margin-top:18px;">Complete netwerkbeveiliging in &eacute;&eacute;n oplossing.</h2>
+      <p class="lead" style="margin-top:18px;">Een FortiGate is veel meer dan een poortwachter. Wij zetten de functies in die uw kantoor nodig heeft.</p>
+    </div>
+    <div class="cols-3" style="margin-top:52px;">
+      <div class="approach-col reveal" data-delay="1">
+        <div style="color:var(--gold);"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 3v6c0 5-3.5 8-8 11-4.5-3-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Inbraakpreventie (IPS)</h3>
+        <p>Herkent en blokkeert aanvallen en bekende kwetsbaarheden voordat ze uw netwerk bereiken.</p>
+      </div>
+      <div class="approach-col reveal" data-delay="2">
+        <div style="color:var(--gold);"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 9a15 15 0 0120 0"/><path d="M5 12.5a10 10 0 0114 0"/><path d="M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></div>
+        <h3>Web- en applicatiefilter</h3>
+        <p>Blokkeert schadelijke en ongewenste websites en geeft grip op welke applicaties worden gebruikt.</p>
+      </div>
+      <div class="approach-col reveal" data-delay="3">
+        <div style="color:var(--gold);"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg></div>
+        <h3>Veilig thuiswerken (VPN)</h3>
+        <p>Versleutelde verbindingen voor medewerkers thuis of onderweg, gekoppeld aan multi-factor authenticatie.</p>
+      </div>
+      <div class="approach-col reveal" data-delay="1">
+        <div style="color:var(--gold);"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2.2 2.2M16.8 16.8L19 19M19 5l-2.2 2.2M7.2 16.8L5 19"/></svg></div>
+        <h3>Antivirus &amp; sandboxing</h3>
+        <p>Controleert verkeer en bestanden op malware en ransomware, met actuele dreigingsinformatie van Fortinet.</p>
+      </div>
+      <div class="approach-col reveal" data-delay="2">
+        <div style="color:var(--gold);"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></svg></div>
+        <h3>Gescheiden netwerken</h3>
+        <p>Gasten-WiFi, telefonie en kantoornetwerk netjes van elkaar gescheiden voor extra veiligheid.</p>
+      </div>
+      <div class="approach-col reveal" data-delay="3">
+        <div style="color:var(--gold);"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18 15l.8 2.2L21 18l-2.2.8L18 21l-.8-2.2L15 18l2.2-.8z"/></svg></div>
+        <h3>Monitoring &amp; rapportage</h3>
+        <p>Wij houden uw firewall continu in de gaten en rapporteren helder over wat er gebeurt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section navy-2" data-screen-label="Fortinet partner">
+  <div class="wrap reveal" style="max-width:860px;">
+    <p class="eyebrow">Offici&euml;le Fortinet-partner</p>
+    <h2 class="h-sec" style="margin-top:20px;">Specialisten in FortiGate.</h2>
+    <p class="lead" style="margin-top:20px;">Legal IT is offici&euml;le partner van Fortinet. Dat betekent gecertificeerde kennis, directe lijnen met de fabrikant en toegang tot de nieuwste beveiligingsdiensten. Samen met onze zakelijke verbindingen en Microsoft 365-beheer zorgen wij voor &eacute;&eacute;n samenhangende, veilige IT-omgeving.</p>
+    <div style="margin-top:32px; display:flex; gap:28px; flex-wrap:wrap;">
+      <a class="btn-link" href="/netwerk-connectiviteit">Zakelijke verbindingen <span class="arr">&rarr;</span></a>
+      <a class="btn-link" href="/microsoft-365-beheer">Microsoft 365-beheer &amp; security <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section paper" data-screen-label="FAQ">
+  <div class="wrap" style="display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(36px,5vw,72px); align-items:start;">
+    <div class="reveal">
+      <p class="eyebrow">Veelgestelde vragen</p>
+      <h2 class="h-sec" style="margin-top:20px;">Goed om te weten.</h2>
+      <p class="lead" style="margin-top:20px;">Staat uw vraag er niet bij? We beantwoorden hem graag persoonlijk.</p>
+      <div style="margin-top:28px;"><a class="btn-link" href="/contact">Neem contact op <span class="arr">&rarr;</span></a></div>
+    </div>
+    <div data-accordion class="reveal" data-delay="1">
+      <div class="acc-item open">
+        <button class="acc-head" type="button">Wat is een managed firewall?<span class="pm"></span></button>
+        <div class="acc-body"><div class="acc-body-inner">Bij een managed firewall koopt u niet alleen een firewall, maar besteedt u ook het beheer uit. Wij installeren en configureren de FortiGate, bewaken hem continu, voeren updates uit en passen de instellingen aan als uw kantoor verandert.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Wat kost een managed firewall?<span class="pm"></span></button>
+        <div class="acc-body"><div class="acc-body-inner">U betaalt een vaste maandprijs, afhankelijk van het FortiGate-model dat bij uw kantoor past, het aantal gebruikers en de gewenste beveiligingsdiensten. Hardware, licenties en beheer kunnen we in &eacute;&eacute;n bedrag per maand onderbrengen.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Waarom kiezen jullie voor FortiGate?<span class="pm"></span></button>
+        <div class="acc-body"><div class="acc-body-inner">FortiGate van Fortinet is een van de meest gebruikte zakelijke firewalls ter wereld. Het combineert firewall, inbraakpreventie, webfiltering en veilige VPN in &eacute;&eacute;n apparaat, met centraal beheer. Als offici&euml;le Fortinet-partner hebben wij de kennis en directe lijnen om dat optimaal in te zetten.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Kunnen medewerkers veilig thuiswerken?<span class="pm"></span></button>
+        <div class="acc-body"><div class="acc-body-inner">Ja. Met een beveiligde VPN-verbinding via de FortiGate werken medewerkers vanuit huis of onderweg net zo veilig als op kantoor. Wij richten dit in en koppelen het aan multi-factor authenticatie.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Wat gebeurt er bij een storing of aanval?<span class="pm"></span></button>
+        <div class="acc-body"><div class="acc-body-inner">Wij monitoren uw firewall continu en ontvangen meldingen bij afwijkingen. We grijpen direct in, informeren u en lossen het probleem op &mdash; vaak voordat u er iets van merkt.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper" data-screen-label="Andere sectoren" style="border-top:1px solid var(--line-light);">
+  <div class="wrap">
+    <div class="reveal" style="max-width:680px; margin-bottom:40px;">
+      <p class="eyebrow">Ook voor</p>
+      <h2 class="h-sec" style="margin-top:18px;">IT voor de juridische en financi&euml;le dienstverlening.</h2>
+    </div>
+    <div class="sol-grid sol-grid--3">
+      <a class="sol-card reveal" data-delay="1" href="/ict-voor-advocatenkantoren">
+        <div class="icon-box"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 21h14"/><path d="M4 7h16"/><path d="M7 7l-3 7a3 3 0 006 0zM17 7l-3 7a3 3 0 006 0z"/></svg></div>
+        <h3>Advocatenkantoren</h3>
+        <p>Vertrouwelijke dossiers, het beroepsgeheim en veel mobiel werk. Wij zorgen voor een veilige, moderne IT-omgeving die daar volledig op is ingericht.</p>
+        <div class="chips-mini"><span>Beroepsgeheim</span><span>Dossierbeveiliging</span><span>AI</span></div>
+        <span class="btn-link">Lees meer <span class="arr">&rarr;</span></span>
+      </a>
+      <a class="sol-card reveal" data-delay="2" href="/ict-voor-accountantskantoren">
+        <div class="icon-box"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M8 6h8M8 10h2M14 10h2M8 14h2M14 14h2M8 18h2M14 18h2"/></svg></div>
+        <h3>Accountantskantoren</h3>
+        <p>Grote hoeveelheden financi&euml;le klantdata, piekperiodes en veel koppelingen. Wij maken uw IT veilig, stabiel en slim geautomatiseerd.</p>
+        <div class="chips-mini"><span>AVG &amp; Wwft</span><span>Automatiseren</span><span>Continu&iuml;teit</span></div>
+        <span class="btn-link">Lees meer <span class="arr">&rarr;</span></span>
+      </a>
+      <a class="sol-card reveal" data-delay="3" href="/ict-voor-notariskantoren">
+        <div class="icon-box"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3H6a1 1 0 00-1 1v16a1 1 0 001 1h12a1 1 0 001-1V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div>
+        <h3>Notariskantoren</h3>
+        <p>Het notariaat kennen we door en door. Met Nobilex en Donna James bieden wij het notariaat een complete, toekomstgerichte oplossing.</p>
+        <div class="chips-mini"><span>Nobilex</span><span>Donna James</span><span>Compliance</span></div>
+        <span class="btn-link">Lees meer <span class="arr">&rarr;</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section--tight navy" data-screen-label="CTA">
+  <div class="wrap center reveal" style="max-width:760px; margin-inline:auto;">
+    <h2 class="h-sec" style="font-size:clamp(1.7rem,2.6vw,2.4rem);">Hoe veilig is uw netwerk echt?</h2>
+    <p class="lead" style="margin:16px auto 28px; color:var(--muted-navy);">Plan een gesprek. We bekijken uw huidige firewall en adviseren wat er nodig is.</p>
+    <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center; justify-content:center;">
+      <a class="btn btn-gold" href="/plan-een-gesprek">Plan een gesprek <span class="arr">&rarr;</span></a>
+      <a class="btn-link" href="tel:+31732200700">Of bel 073 &ndash; 22 00 700 <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer" data-screen-label="Footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand footer-col">
+        <a class="logo" href="/">
+          <picture><source srcset="images/logo-legal-it.webp" type="image/webp"><img src="images/logo-legal-it.png" alt="Legal IT" class="logo-img"></picture>
+        </a>
+        <p>D&eacute; IT-partner voor advocaten, accountants en notarissen. Strategie, architectuur en support &mdash; alles onder &eacute;&eacute;n dak.</p>
+        <p class="footer-tagline">Technologie met inzicht.<br>Ondersteuning met impact.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="/diensten">Diensten &amp; Oplossingen</a></li>
+          <li><a href="/ict-voor-advocatenkantoren">ICT voor advocatenkantoren</a></li>
+          <li><a href="/ict-voor-accountantskantoren">ICT voor accountantskantoren</a></li>
+          <li><a href="/ict-voor-notariskantoren">ICT voor notariskantoren</a></li>
+          <li><a href="/over-ons">Over ons</a></li>
+          <li><a href="/partners">Partners</a></li>
+          <li><a href="/kennis">Kennis</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/plan-een-gesprek">Plan een gesprek</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+31732200700">073 &ndash; 22 00 700</a></li>
+          <li><a href="mailto:info@legal-it.nl">info@legal-it.nl</a></li>
+          <li>Esscheweg 11, 5262 TT Vught</li>
+          <li>Chroomweg 45, 8471 XL Wolvega</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Gegevens</h4>
+        <ul>
+          <li>KvK: 96857951</li>
+          <li>BTW: NL867798750B01</li>
+          <li>IBAN: NL82 RABO 0114 7432 74</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Legal IT B.V. &mdash; Premium IT voor de juridische sector</span>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy</a>
+        <a href="#">Voorwaarden</a>
+        <a href="/privacy#cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.min.js"></script>
 </body>
 </html>
