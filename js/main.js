@@ -361,7 +361,7 @@
       if (typeof window.gtag === "function") {
         var g = state === "granted" ? "granted" : "denied";
         window.gtag("consent", "update", {
-          ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g
+          analytics_storage: g
         });
       }
     }
