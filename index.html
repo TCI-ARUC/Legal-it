@@ -243,21 +243,21 @@
 <main id="main">
 <!-- ============ HERO ============ -->
 <section class="home-hero" data-screen-label="Hero">
+  <div class="home-hero__media" aria-hidden="true">
+    <picture>
+      <source srcset="images/ontwerp/hero-overleg.webp" type="image/webp">
+      <img src="images/ontwerp/hero-overleg.jpg" alt="" width="896" height="395" fetchpriority="high">
+    </picture>
+  </div>
   <div class="wrap home-hero__grid">
     <div class="home-hero__copy">
-      <p class="eyebrow reveal">ICT voor advocaten, accountants en notarissen</p>
-      <h1 class="display reveal" data-delay="1">Technologie die uw kantoor ontzorgt.</h1>
-      <p class="lead reveal" data-delay="2">Legal IT regelt de complete IT van advocaten-, accountants- en notariskantoren. Microsoft 365, AI en automatisering, een beheerde firewall, telefonie en zakelijk internet. Volledig beheerd, met één vast aanspreekpunt.</p>
+      <h1 class="eyebrow reveal">ICT voor advocaten, accountants en notarissen</h1>
+      <p class="display reveal" data-delay="1">Technologie die uw kantoor ontzorgt.</p>
+      <p class="lead reveal" data-delay="2">Legal IT regelt de complete IT van advocaten-, accountants- en notariskantoren. Volledig beheerd, met één vast aanspreekpunt.</p>
       <div class="btn-row reveal" data-delay="3">
         <a class="btn btn-navy" href="/plan-een-gesprek">Plan een kennismaking <span class="arr">&rarr;</span></a>
         <a class="btn btn-outline" href="#diensten">Onze diensten</a>
       </div>
-    </div>
-    <div class="home-hero__media">
-      <picture>
-        <source srcset="images/hero-notariskantoor.webp" type="image/webp">
-        <img src="images/hero-notariskantoor.jpg" alt="Lichte spreekkamer van een kantoor met vergadertafel en glazen wand" width="1500" height="843" fetchpriority="high">
-      </picture>
     </div>
   </div>
 </section>
@@ -286,8 +286,39 @@
   </div>
 </div>
 
+<!-- ============ VAKKEN ============ -->
+<section class="vakken" id="voor-wie" data-screen-label="Voor wie">
+  <div class="wrap">
+    <div class="vakken__head reveal">
+      <p class="eyebrow">Voor wie wij werken</p>
+      <h2 class="h-sec">IT voor uw kantoor.</h2>
+      <p class="lead">Ander beroepsgeheim, andere software, andere piekmomenten. Kies uw type kantoor.</p>
+    </div>
+    <div class="vak-cards">
+      <a class="vak-card reveal" data-delay="1" href="/ict-voor-advocatenkantoren">
+        <img src="images/ontwerp/vak-advocaten.webp" alt="" width="212" height="194" loading="lazy">
+        <div><h3>Advocaten</h3><p>Vertrouwelijke dossiers en het beroepsgeheim. Tot en met veilig AI-gebruik.</p></div>
+        <span class="vak-go" aria-hidden="true">&rarr;</span>
+        <span class="sr-only">ICT voor advocatenkantoren</span>
+      </a>
+      <a class="vak-card reveal" data-delay="2" href="/ict-voor-accountantskantoren">
+        <img src="images/ontwerp/vak-accountants.webp" alt="" width="212" height="194" loading="lazy">
+        <div><h3>Accountants</h3><p>Veel klantdata, drukte rond de deadlines. Stabiel en geautomatiseerd.</p></div>
+        <span class="vak-go" aria-hidden="true">&rarr;</span>
+        <span class="sr-only">ICT voor accountantskantoren</span>
+      </a>
+      <a class="vak-card reveal" data-delay="3" href="/ict-voor-notariskantoren">
+        <img src="images/ontwerp/vak-notarissen.webp" alt="" width="212" height="192" loading="lazy">
+        <div><h3>Notarissen</h3><p>Nobilex en Donna James, gekoppeld aan uw IT. Uit één hand.</p></div>
+        <span class="vak-go" aria-hidden="true">&rarr;</span>
+        <span class="sr-only">ICT voor notariskantoren</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ DIENSTEN ============ -->
-<section class="section paper" id="diensten" data-screen-label="Diensten">
+<section class="section cream" id="diensten" data-screen-label="Diensten">
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
@@ -331,45 +362,6 @@
     <div class="svc-more reveal">
       <p>Ook: <a href="/cybersecurity">cybersecurity</a>, <a href="/veilig-mailen">veilig mailen</a> en <a href="/backup">back-up en herstel</a>.</p>
       <a class="btn btn-outline" href="/diensten">Bekijk alle diensten <span class="arr">&rarr;</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VOOR WIE ============ -->
-<section class="section cream" id="voor-wie" data-screen-label="Voor wie">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <p class="eyebrow">Voor wie wij werken</p>
-        <h2 class="h-sec">Wij kennen uw vak.</h2>
-      </div>
-      <p class="lead">Ander beroepsgeheim, andere software, andere piekmomenten. Kies uw type kantoor.</p>
-    </div>
-    <div class="sector-cards">
-      <a class="sector-card reveal" data-delay="1" href="/ict-voor-advocatenkantoren">
-        <img src="images/ph-netwerk-kantoor.webp" alt="" loading="lazy" width="1400" height="1050">
-        <div class="sector-card__body">
-          <h3>Voor advocaten</h3>
-          <p>Vertrouwelijke dossiers, het beroepsgeheim en advocaten die veel onderweg zijn. Tot en met veilig AI-gebruik.</p>
-          <span class="go">ICT voor advocatenkantoren <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-      <a class="sector-card reveal" data-delay="2" href="/ict-voor-accountantskantoren">
-        <img src="images/ph-werkplek-teams.webp" alt="" loading="lazy" width="1400" height="1120">
-        <div class="sector-card__body">
-          <h3>Voor accountants</h3>
-          <p>Veel financiële klantdata, drukte rond de deadlines en koppelingen met allerlei pakketten. Stabiel en geautomatiseerd.</p>
-          <span class="go">ICT voor accountantskantoren <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
-      <a class="sector-card reveal" data-delay="3" href="/ict-voor-notariskantoren">
-        <img src="images/ph-specialist.webp" alt="" loading="lazy" width="1200" height="1600" style="object-position:50% 70%;">
-        <div class="sector-card__body">
-          <h3>Voor notarissen</h3>
-          <p>Samen met Nobilex en Donna James leveren we notariële software en de IT eromheen, uit één hand.</p>
-          <span class="go">ICT voor notariskantoren <span class="arr">&rarr;</span></span>
-        </div>
-      </a>
     </div>
   </div>
 </section>
