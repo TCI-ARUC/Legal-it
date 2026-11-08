@@ -1,6 +1,6 @@
 # Legal IT
 
-> Legal IT is dé IT-partner voor advocatenkantoren, accountants- en administratiekantoren en notariskantoren. Wij leveren en beheren Microsoft 365, AI-oplossingen en automatisering, managed firewall (FortiGate), Xelion-telefonie en zakelijke verbindingen — veilig, volledig beheerd en tegen een vaste maandprijs. Gevestigd in Vught en Wolvega, actief in heel Nederland.
+> Legal IT is de IT-partner voor advocatenkantoren, accountants- en administratiekantoren en notariskantoren. Wij leveren en beheren Microsoft 365, AI-oplossingen en automatisering, managed firewall (FortiGate), Xelion-telefonie en zakelijke verbindingen: veilig, volledig beheerd en tegen een vaste maandprijs. Gevestigd in Vught en Wolvega, actief in heel Nederland.
 
 ## Over
 - Doelgroepen: advocatenkantoren, accountants- en administratiekantoren, notariskantoren.
@@ -31,10 +31,11 @@
 - [Checklist: 8 vragen voor uw IT-partner](https://legal-it.nl/checklist-ict-partner)
 - [Over ons](https://legal-it.nl/over-ons): verhaal, waarden en team van Legal IT.
 - [Partners](https://legal-it.nl/partners): Microsoft, Fortinet, Xelion, Nobilex en Donna James.
-- [Kennis](https://legal-it.nl/kennis): artikelen over IT, AI, security en compliance, o.a. [AI-beleid voor advocatenkantoren](https://legal-it.nl/ai-beleid-advocatenkantoor), [Cybersecurity voor accountantskantoren](https://legal-it.nl/cybersecurity-accountantskantoor) en [AI in het notariaat](https://legal-it.nl/ai-in-het-notariaat).
+- [Kennis](https://legal-it.nl/kennis): artikelen over IT, AI, security en compliance, o.a. [AI-beleid voor advocatenkantoren](https://legal-it.nl/ai-beleid-advocatenkantoor), [Cybersecurity voor accountantskantoren](https://legal-it.nl/cybersecurity-accountantskantoor) [AI in het notariaat](https://legal-it.nl/ai-in-het-notariaat), [AI voor advocaten](https://legal-it.nl/ai-voor-advocaten), [AI voor accountants](https://legal-it.nl/ai-voor-accountants) en [de Wwft voor accountants](https://legal-it.nl/wwft-accountantskantoor).
+- [Software voor advocatenkantoren](https://legal-it.nl/software-advocatenkantoor) en [software voor accountantskantoren](https://legal-it.nl/software-accountantskantoor): hoe de IT-omgeving aansluit op vakpakketten.
 - [Contact](https://legal-it.nl/contact) en [Plan een gesprek](https://legal-it.nl/plan-een-gesprek).
 
 ## Contact
-- Telefoon: 073 – 22 00 700
+- Telefoon: 073 22 00 700
 - E-mail: info@legal-it.nl
-- Adressen: Esscheweg 11, 5262 TT Vught — Chroomweg 45, 8471 XL Wolvega
+- Adressen: Esscheweg 11, 5262 TT Vught en Chroomweg 45, 8471 XL Wolvega
